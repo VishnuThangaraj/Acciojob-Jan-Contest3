@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acciojob-Jan-Contest3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav id="main_navbar" class="navbar navbar-expand-lg px-5 bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand px-5 text-warning" id="brand_name" href="#"
+            >Moon Night</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#main_navbar"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  aria-current="page"
+                  href="#hotel_locations"
+                  >Locations</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  aria-current="page"
+                  href="#image_gallery"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  aria-current="page"
+                  href="#hotel_rooms"
+                  >Rooms</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-warning" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carousel -->
+
+    <section id="Carousel_main">
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class=""
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class="active"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class=""
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img
+              src="./assets/images/carousel1.jpg"
+              alt="first_image"
+              width="100%"
+            />
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Luxury Unleashed Here</h1>
+                <p class="opacity-75">
+                  Escape the Ordinary: Your Dream Getaway Begins Here
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-warning" href="#"
+                    >Book a Room Now
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/carousel2.jpg"
+              alt="second_image"
+              width="100%"
+            />
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Elegance Redefined Daily</h1>
+                <p>Where Opulence Meets Comfort: Your Home Away from Home.</p>
+                <p>
+                  <a class="btn btn-lg btn-warning" href="#">Browse Gallery</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/carousel3.jpg"
+              alt="third_image"
+              width="100%"
+            />
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Escape, Experience, Enjoy</h1>
+                <p>
+                  Breathtaking Views, Unforgettable Moments: Welcome to
+                  Paradise.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-warning" href="#">Contact Us</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Hotel Locations -->
+
+    <section id="hotel_locations">
+      <h2 class="py-4 text-warning">LOCATIONS</h2>
+      <div class="wrapper py-4">
+        <div class="location_grid border rounded" id="location_1">
+          TamilNadu
+        </div>
+        <div class="location_grid border rounded" id="location_2">Kerala</div>
+        <div class="location_grid border rounded" id="location_3">Andhra</div>
+      </div>
+    </section>
+
+    <!-- Image Gallery -->
+
+    <section id="image_gallery">
+      <h2 class="py-2 text-warning">GALLERY</h2>
+      <div class="parent m-5">
+        <div class="gallery-1 border rounded"></div>
+        <div class="gallery-2 border rounded"></div>
+        <div class="gallery-3 border rounded"></div>
+        <div class="gallery-4 border rounded"></div>
+        <div class="gallery-5 border rounded"></div>
+        <div class="gallery-6 border rounded"></div>
+        <div class="gallery-7 border rounded"></div>
+      </div>
+    </section>
+
+    <!-- Image Cards -->
+    <section id="hotel_rooms">
+      <h2 class="text-warning">ROOMS</h2>
+      <div class="container-fluid m-5 px-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/single.jpeg"
+                class="card-img-top"
+                alt="Single Bed Room"
+                height="200px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Single Bed Room</h5>
+                <p class="card-text">
+                  In your private cocoon, where comfort is tailored just for
+                  you.
+                </p>
+
+                <a href="#" class="btn btn-warning">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/double.jpeg"
+                class="card-img-top"
+                alt="Double Bed Room"
+                height="200px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Double Bed Room</h5>
+                <p class="card-text">
+                  Double the pleasure, double the rest – your perfect retreat.
+                </p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/luxury.jpeg"
+                class="card-img-top"
+                alt="Luxury Bed Room"
+                height="200px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Luxury Room</h5>
+                <p class="card-text">
+                  Luxury is a state of mind,Indulge in the exquisite
+                </p>
+                <a href="#" class="btn btn-warning">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact_us">
+      <div class="container text-white">
+        <h2 class="py-4 text-warning">Contact Us</h2>
+        <footer class="py-5 mx-5">
+          <div class="row">
+            <div class="col-5 col-md-4 mb-3">
+              <h4 class="text-warning">Policies</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    ><span class="links_footer">Terms & Conditions</span></a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    ><span class="links_footer">Privacy</span></a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    ><span class="links_footer">Cookies</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-5 col-md-4 mb-3">
+              <h4 class="text-warning">Support & FAQ</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    ><span class="links_footer">About Us</span></a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    ><span class="links_footer">Careers</span></a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    ><span class="links_footer">Travel Guides</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <h4 class="pb-3 text-warning float-right">
+                Get in Touch With Us
+              </h4>
+              <p>Email : moonnight@email.com</p>
+              <p>Phone : +91 6385-899-999</p>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          >
+            <p>
+              © 2024 Moon Night, Inc. All rights reserved.(Vishnu Thangaraj)
+            </p>
+            <a href="#main_navbar"
+              ><button class="btn btn-warning" type="button">
+                Back To Top
+              </button></a
+            >
+          </div>
+        </footer>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

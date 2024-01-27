@@ -1,0 +1,109 @@
+body {
+  background-color: #6c757d;
+}
+
+/* Navigation Bar */
+#brand_name {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#navbarSupportedContent {
+  font-size: 20px;
+}
+h2 {
+  text-align: center;
+}
+
+/* Location Grid */
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 0px;
+}
+
+.location_grid {
+  text-align: center;
+  padding: 55px 0;
+  width: 350px;
+  height: 200px;
+  border: 2px solid grey;
+  border-radius: 5%;
+  font-size: 50px;
+  color: whitesmoke;
+  text-shadow: 0px 0px 10px rgb(133, 129, 9);
+}
+
+#location_1 {
+  background-image: url("./assets/images/tn.png");
+  background-repeat: none;
+  background-size: auto;
+}
+#location_2 {
+  background-image: url("./assets/images/kerala.png");
+  background-repeat: none;
+  background-size: auto;
+}
+#location_3 {
+  background-image: url("./assets/images/andhra.png");
+  background-repeat: none;
+  background-size: auto;
+}
+
+/* Grid Container for Gallery  */
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  /* m */
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery-1 {
+  background-image: url("./assets/images/gallery1.jpg");
+  height: 150px;
+  grid-area: 1 / 5 / 3 / 7;
+}
+.gallery-2 {
+  background-image: url("./assets/images/gallery2.jpg");
+  grid-area: 3 / 5 / 5 / 7;
+}
+.gallery-3 {
+  background-image: url("./assets/images/gallery7.jpg");
+  grid-area: 1 / 3 / 5 / 4;
+}
+.gallery-4 {
+  background-image: url("./assets/images/gallery4.jpg");
+  grid-area: 1 / 4 / 5 / 5;
+}
+.gallery-5 {
+  background-image: url("./assets/images/gallery5.jpg");
+  grid-area: 1 / 1 / 5 / 3;
+}
+.gallery-6 {
+  background-image: url("./assets/images/gallery6.jpg");
+  grid-area: 5 / 1 / 9 / 3;
+}
+.gallery-7 {
+  background-image: url("./assets/images/gallery3.jpg");
+  grid-area: 5 / 3 / 9 / 7;
+}
+
+/* Hotel Room Card */
+#hotel_rooms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.links_footer {
+  color: whitesmoke;
+}
